@@ -1,0 +1,174 @@
+header{
+    position: fixed; 
+    width: 100%;
+    top: 0px;
+    transition: all 0.3s ease-out;
+    background: transparent;
+}
+
+
+/* Index */
+
+/*Image de bienvenue*/
+.home {
+    height: 100%;
+    background-image: url("img/ond-guide-wiki.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home h1 {
+    font-size: 40px;
+    padding-left: 100px;
+    padding-top: 200px;
+    color: #222;
+}
+
+/* Texte dialogue */
+
+.index-bienvenue h2 {
+    font-size: 16px;
+    padding: 50px;
+    color: #222;
+    text-align: center;
+}
+
+.index-link-git {
+    text-decoration: none;
+    background-image: linear-gradient(#da1515, #da1515);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    text-decoration: underline;
+
+    transition: background-size 500ms;
+}
+
+.index-link-git:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+/*Select Map*/
+.index-maps h3 {
+    color: #000000;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: 150px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -1px;
+    text-align: center;
+}
+  
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+.slide-toggle{
+    display: none;
+}
+
+.slidemenu{
+    font-family: arial, sans-serif;
+    max-width: 600px;
+    margin: 100px auto 40px;
+    overflow: hidden;
+}
+
+.slidemenu label{
+    width: 25%;
+    text-align: center;
+    display: block;
+    float: left;
+    color: #333;
+    opacity: 0.2;
+}
+
+.slidemenu label:hover{
+    cursor: pointer;
+    color: #666;
+    opacity: 0.5;
+}
+
+.slidemenu label span{
+    display: block;
+    padding: 10px;
+}
+
+.slidemenu label .icon{
+    font-size: 20px;
+    border: solid 2px #333;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+/*Bar Style*/
+.slider{
+    width: 100%;
+    height: 5px;
+    display: block;
+    background: #ccc;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.slider .bar{
+    width: 25%;
+    height: 5px;
+    background: #333;
+    border-radius: 5px;
+}
+
+/*Animation*/
+.slidemenu label, .slider .bar{
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+}
+
+/*Toggle*/
+.slidemenu .slide-toggle:checked + label{
+    opacity: 1;
+}
+
+.slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
+.slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
+.slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 50%; }
+.slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
+
+
+/*Animation*/
+
+[class*="revealright-"] {
+    opacity: 0;
+    transform: translateX(-200px);
+}
+
+[class*="revealleft-"] {
+    opacity: 0;
+    transform: translateX(200px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
+.revealright-2 {
+    transition-delay: .1s;
+}
+.revealleft-2 {
+    transition-delay: .2s;
+}

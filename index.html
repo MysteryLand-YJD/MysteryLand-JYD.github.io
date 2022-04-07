@@ -23,19 +23,67 @@
                 <li><a>À propos</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost normal-case text-xl">MysteryLand</a>
+            <a class="btn btn-ghost normal-case text-xl" href="index.html">MysteryLand</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal p-0">
-              <li><a href="index.html">Acceuil</a></li>
+              <li><a href="index.html">Accueil</a></li>
               <li><a>Classement</a></li>
               <li><a>À propos</a></li>
             </ul>
           </div>
           <div class="navbar-end">
-            <a class="btn" title="Télécharger le jeu" href="https://github.com/AliiiBenn/MysteryLandProject"><img src="img/download-button.png" height="20" width="20"></img></a>
+            <a class="btn" title="Télécharger le jeu" href="https://github.com/AliiiBenn/MysteryLandProject">Télécharger Le jeu</img></a>
           </div>
       </div>
     </header>
-</body>
+    <div class="home">
+      <h1>MysteryLand</h1>
+    </div>
+    <!-- Dialogue -->
+    <div class="index-bienvenue revealright-1"> 
+      <h2><strong>Holdo</strong> - Bienvenue à MysteryLand !<br>
+        <strong>Holdo</strong> - Je m'apelle Holdo et je serai ton guide dans cette aventure extraordinaire.<br>
+        <strong>Holdo</strong> - Cette ville est à première vu tous ce qui a de plus normal.<br>
+        <strong>Holdo</strong> - Mais c'est là que vous allez découvrir des mystères et des tragédies.<br>
+        <strong>Holdo</strong> - Et vous allez découvrir des personnages qui vous dérangent.<br>
+        <strong>Holdo</strong> - Et vous allez découvrir des lieux qui vous dérangent.<br>
+        <strong>Holdo</strong> - Bref...<br>
+        <strong>Holdo</strong> - Alors, <a class="index-link-git" href="https://github.com/AliiiBenn/MysteryLandProject">commençons</a> !<br>  
+      </h2>
+    </div>
+    <div class="index-maps revealleft-1">
+      <h3>Les Maps</h3>
+    </div>
+     
+    <!-- Selection de map -->
+    <div>
+      <nav class="slidemenu revealleft-2">
+        <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" checked/>
+        <label for="slide-item-1">
+          <p class="icon" title="Bibliothèque">📚</p><span>Bibliothèque</span>
+        </label>
+        
+        <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle"/>
+        <label for="slide-item-2">
+          <p class="icon" title="Scène de crime">🔫</p><span>Scène de crime</span>
+        </label>
+
+        <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle"/>
+        <label for="slide-item-3">
+          <p class="icon" title="Prison">⛓</p><span>Prison</span>
+        </label>
+
+        <input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle"/>
+        <label for="slide-item-4">
+          <p class="icon" title="Hôpital-Asile">🏥</p><span>Hôpital-Asile</span>
+        </label>
+        <div class="clear"></div>
+        <div class="slider">
+        <div class="bar"></div>
+        </div>
+      </nav>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
