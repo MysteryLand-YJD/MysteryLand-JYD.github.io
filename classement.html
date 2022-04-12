@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.5/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>MysteryLand | Classement</title>
+</head>
+<body>
+    <header class="menu-selection bg-white">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="classement.html">Classement</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost normal-case text-xl" href="index.html">MysteryLand</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal p-0">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="classement.html">Classement</a></li>
+              <li><a href="a-propos.html">À propos</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn" title="Télécharger le jeu" href="https://github.com/AliiiBenn/MysteryLandProject">Télécharger Le jeu</img></a>
+          </div>
+      </div>
+    </header>
+    <div class="home">
+      <h1>Mystery<span class="suite">Land</span></h1>
+    </div>
+    <div class="classement-table revealleft-1">
+        <h3>Classement</h3>
+    </div>
+    <div class="classement-tableau revealright-1">    
+        <div class="overflow-x-auto">
+            <table class="table table-zebra w-full">
+            <!-- head -->
+            <thead>
+                <tr>
+                <th></th>
+                <th>Pseudo</th>
+                <th>Level</th>
+                <th>Money</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- row 1 -->
+                <tr>
+                <th>1</th>
+                <td>Aliben</td>
+                <td>9</td>
+                <td>99.999</td>
+                </tr>
+                <!-- row 2 -->
+                <tr>
+                <th>2</th>
+                <td>Sid</td>
+                <td>4</td>
+                <td>12.584</td>
+                </tr>
+                <!-- row 3 -->
+                <tr>
+                <th>3</th>
+                <td>Drokami</td>
+                <td>6</td>
+                <td>85.369</td>
+                </tr>
+                <!-- row 4 -->
+                <tr>
+                <th>4</th>
+                <td>Unknown</td>
+                <td>none</td>
+                <td>none</td>
+                </tr>
+                <!-- row 5 -->
+                <tr>
+                <th>5</th>
+                <td>Unknown</td>
+                <td>none</td>
+                <td>none</td>
+                </tr>
+                <!-- row 7 -->
+                <tr>
+                <th>6</th>
+                <td>Unknown</td>
+                <td>none</td>
+                <td>none</td>
+                </tr>
+                <!-- row 7 -->
+                <tr>
+                <th>7</th>
+                <td>Unknown</td>
+                <td>none</td>
+                <td>none</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+  <footer>
+    <p>MysteryLand. All rights reserved.</p>
+  </footer>
+</html>

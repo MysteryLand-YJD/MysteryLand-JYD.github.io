@@ -1,9 +1,17 @@
 header{
-    position: fixed; 
     width: 100%;
     top: 0px;
-    transition: all 0.3s ease-out;
-    background: transparent;
+}
+
+footer {
+    background-color: #73b8c6;
+    color: #fff;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    margin-top: 40px;
+    text-align: center;
+    height: 50px;
 }
 
 
@@ -19,10 +27,15 @@ header{
 }
 
 .home h1 {
-    font-size: 40px;
+    font-size: 85px;
     padding-left: 100px;
-    padding-top: 200px;
-    color: #222;
+    padding-top: 360px;
+    color: #fff;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+}
+
+.suite {
+    color: #73b8c6;
 }
 
 /* Texte dialogue */
@@ -36,12 +49,11 @@ header{
 
 .index-link-git {
     text-decoration: none;
-    background-image: linear-gradient(#da1515, #da1515);
+    background-image: linear-gradient(#73b8c6, #73b8c6);
     background-repeat: no-repeat;
     background-size: 0% 100%;
     background-position-x: right;
     text-decoration: underline;
-
     transition: background-size 500ms;
 }
 
@@ -53,7 +65,7 @@ header{
 /*Select Map*/
 .index-maps h3 {
     color: #000000;
-    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    text-shadow: 0 20px 25px #73b8c6, 0 40px 60px #73b8c6;
     font-size: 150px;
     font-weight: bold;
     text-decoration: none;
@@ -103,7 +115,7 @@ header{
 
 .slidemenu label .icon{
     font-size: 20px;
-    border: solid 2px #333;
+    border: solid 2px #73b8c6;
     text-align: center;
     height: 50px;
     width: 50px;
@@ -126,7 +138,7 @@ header{
 .slider .bar{
     width: 25%;
     height: 5px;
-    background: #333;
+    background: #73b8c6;
     border-radius: 5px;
 }
 
@@ -146,6 +158,95 @@ header{
 .slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
 .slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 50%; }
 .slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
+
+
+/*text map*/
+
+.text-bibliotheque h2 {
+    font-size: 16px;
+    padding: 50px;
+    color: #222;
+    text-align: center;
+}
+
+.text-scenecrime h2 {
+    font-size: 16px;
+    padding: 50px;
+    color: #222;
+    text-align: center;
+}
+
+.text-prison h2 {
+    font-size: 16px;
+    padding: 50px;
+    color: #222;
+    text-align: center;
+}
+
+.text-hopitalasile h2 {
+    font-size: 16px;
+    padding: 50px;
+    color: #222;
+    text-align: center;
+}
+
+/*Les règles*/
+
+.index-regles h3 {
+    color: #000000;
+    text-shadow: 0 20px 25px #73b8c6, 0 40px 60px #73b8c6;
+    font-size: 150px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.index-regles h2 {
+    font-size: 16px;
+    padding: 50px;
+    color: #222;
+    text-align: center;
+}
+
+
+
+/* Classement */
+
+.classement-table h3 {
+    color: #000000;
+    text-shadow: 0 20px 25px #73b8c6, 0 40px 60px #73b8c6;
+    font-size: 150px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.classement-tableau {
+    padding: 40px 40px 40px 40px;
+}
+
+.classement-tableau table {
+    border: solid 2px #73b8c6;
+}
+
+
+
+/* A propos */
+
+.apropos-table {
+    color: #000000;
+    text-shadow: 0 20px 25px #73b8c6, 0 40px 60px #73b8c6;
+    font-size: 150px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+
+
 
 
 /*Animation*/
@@ -171,4 +272,66 @@ header{
 }
 .revealleft-2 {
     transition-delay: .2s;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .index-maps h3 {
+        color: #000000;
+        text-shadow: 0 20px 25px #73b8c6, 0 40px 60px #73b8c6;
+        font-size: 75px;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+    .index-regles h3 {
+        color: #000000;
+        text-shadow: 0 20px 25px #73b8c6, 0 40px 60px #73b8c6;
+        font-size: 75px;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+    .home h1 {
+        font-size: 50px;
+        padding-left: 100px;
+        padding-top: 360px;
+        color: #fff;
+        text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    }
+    .classement-table h3 {
+        color: #000000;
+        text-shadow: 0 20px 25px #73b8c6, 0 40px 60px #73b8c6;
+        font-size: 75px;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+    .apropos-table h3 {
+        color: #000000;
+        text-shadow: 0 20px 25px #73b8c6, 0 40px 60px #73b8c6;
+        font-size: 75px;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+    .index-footer2 h2{
+        display: none;
+    }
+    .index-footer h2{
+        text-align: center;
+    }
+
+    .classement-footer2 h2{
+        display: none;
+    }
+    .classement-footer h2{
+        text-align: center;
+    }
 }

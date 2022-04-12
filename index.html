@@ -10,8 +10,8 @@
     <title>MysteryLand | Accueil</title>
 </head>
 <body>
-    <header class="menu-selection">
-        <div class="navbar bg-base-100">
+    <header class="menu-selection bg-white">
+        <div class="navbar">
           <div class="navbar-start">
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -19,8 +19,8 @@
               </label>
               <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                 <li><a href="index.html">Accueil</a></li>
-                <li><a>Classement</a></li>
-                <li><a>À propos</a></li>
+                <li><a href="classement.html">Classement</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
               </ul>
             </div>
             <a class="btn btn-ghost normal-case text-xl" href="index.html">MysteryLand</a>
@@ -28,8 +28,8 @@
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal p-0">
               <li><a href="index.html">Accueil</a></li>
-              <li><a>Classement</a></li>
-              <li><a>À propos</a></li>
+              <li><a href="classement.html">Classement</a></li>
+              <li><a href="a-propos.html">À propos</a></li>
             </ul>
           </div>
           <div class="navbar-end">
@@ -38,8 +38,10 @@
       </div>
     </header>
     <div class="home">
-      <h1>MysteryLand</h1>
+      <h1>Mystery<span class="suite">Land</span></h1>
     </div>
+    
+    
     <!-- Dialogue -->
     <div class="index-bienvenue revealright-1"> 
       <h2><strong>Holdo</strong> - Bienvenue à MysteryLand !<br>
@@ -52,6 +54,8 @@
         <strong>Holdo</strong> - Alors, <a class="index-link-git" href="https://github.com/AliiiBenn/MysteryLandProject">commençons</a> !<br>  
       </h2>
     </div>
+    
+    <!--Les maps -->
     <div class="index-maps revealleft-1">
       <h3>Les Maps</h3>
     </div>
@@ -59,22 +63,22 @@
     <!-- Selection de map -->
     <div>
       <nav class="slidemenu revealleft-2">
-        <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" checked/>
+        <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" onclick="afficherTexte('text-bibliotheque')" onclick="afficherTexte('text-bibliotheque')" checked/>
         <label for="slide-item-1">
           <p class="icon" title="Bibliothèque">📚</p><span>Bibliothèque</span>
         </label>
         
-        <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle"/>
+        <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle" onclick="afficherTexte('text-scenecrime')"/>
         <label for="slide-item-2">
           <p class="icon" title="Scène de crime">🔫</p><span>Scène de crime</span>
         </label>
 
-        <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle"/>
+        <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle" onclick="afficherTexte('text-prison')"/>
         <label for="slide-item-3">
           <p class="icon" title="Prison">⛓</p><span>Prison</span>
         </label>
 
-        <input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle"/>
+        <input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle" onclick="afficherTexte('text-hopitalasile')"/>
         <label for="slide-item-4">
           <p class="icon" title="Hôpital-Asile">🏥</p><span>Hôpital-Asile</span>
         </label>
@@ -83,7 +87,44 @@
         <div class="bar"></div>
         </div>
       </nav>
+      <div class="text-bibliotheque" id="text-bibliotheque">
+        <h2>
+        Le joueur arrive dans un bibliothèque son but : s'en échapper en y cherchant un livre magique.<br>
+        Malheureusement, les choses ne vont pas se passer comme prévu...
+        </h2>
+      </div>
+      <div class="text-scenecrime" id="text-scenecrime">
+        <h2>
+        Le joueur arrive dans une scène de crime son but : s'en échapper en élucisant le meurtre.<br>
+        Malheureusement, les choses ne vont pas se passer comme prévu...
+        </h2>
+      </div>
+      <div class="text-prison" id="text-prison">
+        <h2>
+        Le joueur arrive dans une prison son but : s'en évader.<br>
+        Malheureusement, les choses ne vont pas se passer comme prévu...
+        </h2>
+      </div>
+        <div class="text-hopitalasile" id="text-hopitalasile">
+        <h2>
+        Le joueur arrive dans un hôpital-asile son but : s'en échapper en y résolvant des énigmes.<br>
+        Malheureusement, les choses ne vont pas se passer comme prévu...
+        </h2>
+      </div>
     </div>
+
+    <div class="index-regles revealleft-1">
+      <h3>Les Règles</h3>
+    </div>
+    <div class="index-regles revealright-1">
+      <h2>
+        <strong>Holdo</strong> - Les règles sont simples :<br>
+        1 - S'échapper des différents Donjons.<br>
+        2 - Règle 1.<br>
+        3 - Se référer à la règle 2.
     <script src="main.js"></script>
   </body>
+  <footer>
+    <p>MysteryLand. All rights reserved.</p>
+  </footer>
 </html>

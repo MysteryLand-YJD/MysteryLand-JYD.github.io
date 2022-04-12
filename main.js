@@ -20,6 +20,8 @@ document.querySelectorAll('[class*="revealright-"]').forEach(function(r) {
 })
 
 
+
+
 const ratio2 = .1
 const options2 = {
   root: null,
@@ -40,3 +42,16 @@ const observer2 = new IntersectionObserver(handleIntersect2, options2)
 document.querySelectorAll('[class*="revealleft-"]').forEach(function(r) {
     observer.observe(r)
 })
+
+
+function afficherTexte(id) {
+    var x = document.getElementById(id);
+    // log the diplay state of x
+    console.log(x.style.display);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
